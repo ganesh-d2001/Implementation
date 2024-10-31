@@ -147,7 +147,7 @@ def fetch_person_detail(person_id):
         return jsonify({"status": "error", "message": str(e)}), 500
 
 # Search for a person by name at /app/people/search
-@app.route('/people/search', methods=['GET'])
+@app.route('/app/people/search', methods=['GET'])
 def search_people_by_name():
     name = request.args.get('name')
     try:
